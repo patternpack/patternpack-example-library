@@ -13,10 +13,11 @@
     "test",
     "tests"
   ],
+  "main": "dist/patternpack-example-libarary.css",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/patternpack/patternpack-example-library.git"
+    "url": "git://github.com/patternpack/patternpack-example-library.git"
   },
   "authors": [
     "John Gully <john.gully@slalom.com>",
