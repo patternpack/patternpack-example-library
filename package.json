@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/patternpack/patternpack-example-library.git"
+    "url": "git://github.com/patternpack/patternpack-example-library.git"
   },
   "bugs": {
     "url": "https://github.com/patternpack/patternpack-example-library/issues"
