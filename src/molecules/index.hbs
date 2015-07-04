@@ -1,0 +1,20 @@
+---
+title: Molecules
+---
+<div>
+  <h1>{{title}}</h1>
+  <p>TODO: Describe what an molecule is</p> 
+  
+  {{#each pages}}
+    {{#contains this.dest "molecules"}}
+    {{#isnt ../../page.dest this.dest}}
+    <a name="{{basename}}"></a>
+    <div class="markdown__body">
+      {{#markdown}}
+        {{{page}}}
+      {{/markdown}}
+    </div>
+    {{/isnt}}
+    {{/contains}}
+  {{/each}}
+</div>

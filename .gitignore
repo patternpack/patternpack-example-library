@@ -1,0 +1,17 @@
+# PatternPack Example Library specific
+src/assets/css/patterns.css*
+src/assets/sass/patternpack-patterns.scss
+
+# Project directories
+node_modules/
+bower_components/
+html/
+
+# OS & project generated files
+*.orig
+*.log
+.log
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db

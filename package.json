@@ -1,0 +1,42 @@
+{
+  "name": "patternpack-example-library",
+  "description": "The example pattern library created from pattern pack",
+  "version": "0.0.1-alpha.1",
+  "license": "MIT",
+  "readme": "readme.md",
+  "devDependencies": {
+    "patternpack": "latest",
+    "patternpack-example-theme": "latest",
+    "grunt": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patternpack/patternpack-example-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patternpack/patternpack-example-library/issues"
+  },
+  "author": "John Gully <john.gully@slalom.com>",
+  "contributors": [
+    "Marcelo Sommers <marcelos@slalom.com>"
+  ],
+  "keywords": [
+    "atomic design",
+    "atomic-design",
+    "atomicdesign",
+    "atomic",
+    "design",
+    "design system",
+    "example",
+    "library",
+    "pack",
+    "pattern",
+    "pattern pack",
+    "pattern pack example library",
+    "pattern-pack",
+    "pattern-pack-example-library",
+    "pattern-library",
+    "patternlibrary",
+    "patternpack"
+  ]
+}

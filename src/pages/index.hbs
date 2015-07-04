@@ -1,0 +1,36 @@
+---
+title: Pages
+---
+<div>
+  <h1>Templates</h1>
+  <p>TODO: Describe what a template</p> 
+  
+  <ul>
+  {{#each pages}}
+    {{#contains dest "pages"}}
+    {{#compare data.template "==" true}}
+    {{#isnt ../../page.dest dest}}
+    <li><a href="{{relative ../../../../page.dest dest}}">{{data.title}}</a></li>
+    {{/isnt}}
+    {{/compare}}
+    
+    {{/contains}}
+  {{/each}}
+  <ul>
+
+  <h1>Pages</h1>
+  <p>TODO: Describe what a page instance</p> 
+  <ul>
+  {{#each pages}}
+    {{#contains dest "pages"}}
+    {{#compare data.template "==" false}}
+    {{#isnt ../../page.dest dest}}
+    <li><a href="{{relative ../../../../page.dest dest}}">{{data.title}}</a></li>
+    {{/isnt}}
+    {{/compare}}
+    
+    {{/contains}}
+  {{/each}}
+  <ul>
+
+</div>
