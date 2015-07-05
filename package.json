@@ -7,7 +7,6 @@
   "devDependencies": {
     "grunt": "latest",
     "patternpack": "latest",
-    "patternpack-example-theme": "latest"
   },
   "repository": {
     "type": "git",

@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     }
   });
 
-  require("./node_modules/patternpack/gruntPatternPackTask.js")(grunt);
+  grunt.loadNpmTasks("patternpack");
 
   grunt.registerTask("run", ["patternpack:run"]);
   grunt.registerTask("build", ["patternpack:build"]);
