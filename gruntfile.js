@@ -2,7 +2,8 @@ module.exports = function (grunt) {
   grunt.initConfig({
     patternpack: {
       options: {
-        assets: "./src/assets"
+        assets: "./src/assets",
+        cssPreprocessor: "less"
 
         // Add a custom theme by pointing to the location of the theme files
         // This can be added to your pattern library or in an external repository
