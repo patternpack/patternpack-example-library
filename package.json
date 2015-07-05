@@ -5,9 +5,9 @@
   "license": "MIT",
   "readme": "readme.md",
   "devDependencies": {
+    "grunt": "latest",
     "patternpack": "latest",
-    "patternpack-example-theme": "latest",
-    "grunt": "latest"
+    "patternpack-example-theme": "latest"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   },
   "author": "John Gully <john.gully@slalom.com>",
   "contributors": [
-    "Marcelo Sommers <marcelos@slalom.com>"
+    "Marcelo Somers <marcelos@slalom.com>"
   ],
   "keywords": [
     "atomic design",
