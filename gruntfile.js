@@ -9,7 +9,15 @@ module.exports = function (grunt) {
         // like the patternpack-example-theme.
         // pattern: "./node_modules/patternpack-example-theme"
       },
-      run: {},
+      run: {
+        options: {
+          server: {
+            open: {
+              target: "http://localhost:8888"
+            }
+          }
+        }
+      },
       build: {
         options: {
           task: "build"
