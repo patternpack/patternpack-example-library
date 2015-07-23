@@ -5,7 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "latest",
-    "patternpack": "latest",
+    "patternpack": "latest"
   },
   "repository": {
     "type": "git",
