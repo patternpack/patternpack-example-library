@@ -11,16 +11,8 @@ module.exports = function (grunt) {
         // pattern: "./node_modules/patternpack-example-theme"
       },
       run: {},
-      build: {
-        options: {
-          task: "build"
-        }
-      },
-      release: {
-        options: {
-          task: "release"
-        }
-      }
+      build: {},
+      release: {}
     }
   });
 
