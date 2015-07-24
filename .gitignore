@@ -1,4 +1,5 @@
 # PatternPack Example Library specific
+.patternpackrc
 src/assets/css/patterns.css*
 src/assets/sass/patternpack-patterns.scss
 src/assets/less/patternpack-patterns.less
