@@ -5,7 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "latest",
-    "patternpack": "latest"
+    "patternpack": "../patternpack",
+    "generator-patternpack": "../generator-patternpack"
   },
   "repository": {
     "type": "git",
