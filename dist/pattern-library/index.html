@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="assets/css/patterns.css" rel="stylesheet" />
+    <link href="assets/../theme-assets/css/patternpack-theme.css" rel="stylesheet" />
+    <link href="assets/../theme-assets/css/github.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pattern Library</title>
+  </head>
+  <body>
+    <div id="libraryContainer" class="library__container">
+      <header class="library__header">
+        <a href="/">
+          <img src="http://placehold.it/200x60&text=logo" class="library__header__logo">
+          </span> 
+          <span class="library__header__title">Pattern Library</span> </a> 
+        <div id="menuToggle" class="library__header__menu-toggle__container">
+          <div class="library__header__toggle">Menu</div>
+        </div>
+      </header>
+      <div id="libraryContent" class="library__content">
+        <div class="library__content__open-overlay"></div>
+        <div class="markdown__body">
+          <p>
+            <h1 id="what-are-pattern-libraries-">What are pattern libraries?</h1>
+          </p>
+          <p>
+            <p>A pattern library is a collection of
+              <a href="http://ui-patterns.com/">user interface design patterns</a> . It breaks down the overall design into element that solve common design problems and can be reused consistently. </p>
+          </p>
+          <p>
+            <p>A pattern library defines not only how an element of an application looks, but also provides simple examples of how each piece should be implemented. This allows designers to give examples of how each element looks and feels, while providing
+              developers with tools to bring the design to life.</p>
+          </p>
+          <p>
+            <h3 id="atomic-design-principles">Atomic design principles</h3>
+          </p>
+          <p>
+            <p>The
+              <a href="http://bradfrost.com/blog/post/atomic-web-design">atomic design</a>  principles outlined by
+              <a href="http://bradfrost.com">Brad Frost</a>  have served as a significant influence to this pattern library. The concept of breaking down a design into its components (atoms, molecules, templates &amp; pages) lends itself very well to the goals of a pattern library and
+              leveraged heavily throughout.</p>
+          </p>
+          <p>
+            <table>
+          </p>
+          <p>
+            <thead>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <th>Component</th>
+          </p>
+          <p>
+            <th>Description</th>
+            </tr>
+            </thead>
+          </p>
+          <p>
+            <tbody>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td> <strong>Atom</strong> </td>
+          </p>
+          <p>
+            <td>A component of your design that will not be broken down in to smaller pieces. (button, text input, header, etc.)</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td> <strong>Molecue</strong> </td>
+          </p>
+          <p>
+            <td>A composition of more than one Atom. (menu, navigation, contact form, etc.)</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td> <strong>Template</strong> </td>
+          </p>
+          <p>
+            <td>A common structure for building a page that is designed for reuse. (blog post, news article, product detail, etc.)</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td> <strong>Page</strong> </td>
+          </p>
+          <p>
+            <td>A single implementation for a specific use case that requires styles that intentionally deviate from the patterns defined in the library. (home page, any custom page)</td>
+            </tr>
+            </tbody>
+            </table>
+          </p>
+          <p>
+            <p>In addition to the concepts of
+              <a href="http://bradfrost.com/blog/post/atomic-web-design">atomic design</a>  the pattern library follows some general principles for
+              <a href="https://bitbucket.org/slalom-consulting/dallas-css-standards">CSS style guidance</a> .</p>
+          </p>
+          <p>
+            <h1 id="what-is-a-pattern-">What is a pattern?</h1>
+          </p>
+          <p>
+            <p>A pattern consists of three basic elements (name &amp; description, visual example, code example) that should fully describe the element. Each pattern in the pattern library is defined individually and organized by it atomic design hierarchy.</p>
+          </p>
+          <p>
+            <table>
+          </p>
+          <p>
+            <thead>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <th>Element</th>
+          </p>
+          <p>
+            <th>Description</th>
+            </tr>
+            </thead>
+          </p>
+          <p>
+            <tbody>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td>
+              <nobr><strong>Name &amp; description</strong> </nobr>
+            </td>
+          </p>
+          <p>
+            <td>The narrative should describe the pattern and provide basic guidance for its use. Any special circumstances or additional guidance should be included here.</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td>
+              <nobr><strong>Visual example</strong> </nobr>
+            </td>
+          </p>
+          <p>
+            <td>The visual should be provided as an implementation of both the HTML markup and CSS styles. The combination of these elements should provide a desired visual display of the pattern.</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td>
+              <nobr><strong>Code sample</strong> </nobr>
+            </td>
+          </p>
+          <p>
+            <td>The sample should provides a snippet of markup that can be used to recreate the pattern. Any implementation specific details should be removed from the code example. </td>
+            </tr>
+            </tbody>
+            </table>
+          </p>
+          <p>
+            <p> <em>Atoms are often combined into related groups to reduce clutter and make the pattern library easier to navigate and consume.</em> </p>
+          </p>
+          <p>
+            <h1 id="creating-a-pattern">Creating a pattern</h1>
+          </p>
+          <p>
+            <p>At a high-level each pattern is created in the folder corresponding to its atomic hierarchy and is defined by two files (one for the pattern the other for the CSS styles).</p>
+          </p>
+          <p>
+            <h3 id="list-example">List Example</h3>
+          </p>
+          <p>
+            <p>To create a new pattern for create a new pattern for a fictitious &quot;Content List&quot; atom that is intended to style lists of text within the body of some content:</p>
+          </p>
+          <p>
+            <p><em>NOTE: In addition to following these steps you must also rebuild the pattern library in order see the changes described in this example.</em> </p>
+          </p>
+          <p>
+            <ol>
+          </p>
+          <p>
+            <li>
+              <p>Create a new file <code>src/atoms/contentList.md</code> with the basic pattern elements (name &amp; description, visual example, code example)</p>
+            </li>
+          </p>
+          <p>
+            <li>
+              <p>Create a new file <code>src/atoms/contentList.scss</code> with the styles for the list (bullet style, line height, indent size, etc.)</p>
+            </li>
+            </ol>
+          </p>
+          <p>
+            <p><strong>contentList.md</strong> </p>
+          </p>
+          <p><pre><code class="language-md">---
+title: Content List
+---</p>
+<p>## Content List
+The content list pattern is used within content pages to display textual information in a bulleted list.</p>
+<p>### Examples
+&lt;div class=&quot;library__example&quot;&gt;
+  &lt;ul class=&quot;content__list&quot;&gt;
+    &lt;li class=&quot;content__list-item&quot;&gt;The first list item&lt;/li&gt;
+    &lt;li class=&quot;content__list-item&quot;&gt;The second list item&lt;/li&gt;
+    &lt;li class=&quot;content__list-item&quot;&gt;The third list item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</p>
+<p>### Code
+```
+&lt;ul class=&quot;content__list&quot;&gt;
+  &lt;li class=&quot;content__list-item&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+```</code></pre></p>
+          <p>
+            <p><strong>contentList.scss</strong> </p>
+          </p>
+          <p><pre><code class="language-scss"><span class="attribute">content</span> __list {
+  <span class="attribute">list-style-type</span> <span class="value">: circle;</span> 
+  <span class="attribute">margin</span> <span class="value">: <span class="number">10</span> px <span class="number">0</span> px;</span> 
+}</p>
+<p><span class="attribute">content</span> __list-item {
+  <span class="attribute">padding</span> <span class="value">: <span class="number">10</span> px;</span> 
+}</code></pre></p>
+          <p>
+            <h1 id="building-the-pattern-library">Building the pattern library</h1>
+          </p>
+          <p>
+            <p>The pattern library build system uses the
+              <a href="http://gruntjs.com/">Grunt</a>  build automation tool to dynamically generate a static pattern library website. Additionally the styles used to create the patterns are bundled into a single css file designed to be used in an application.</p>
+          </p>
+          <p>
+            <table>
+          </p>
+          <p>
+            <thead>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <th>
+              <nobr>Grunt Tasks</nobr>
+            </th>
+          </p>
+          <p>
+            <th>Description</th>
+            </tr>
+            </thead>
+          </p>
+          <p>
+            <tbody>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td>
+              <nobr><code>grunt</code></nobr>
+            </td>
+          </p>
+          <p>
+            <td>Builds the pattern library and standalone patterns, runs a webserver to host the site, and monitors files for changes. Automatically rebuilds the site when changes are detected.</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td>
+              <nobr><code>grunt build</code></nobr>
+            </td>
+          </p>
+          <p>
+            <td>Builds the pattern library and standalone patterns.</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td>
+              <nobr><code>grunt build</code></nobr>
+            </td>
+          </p>
+          <p>
+            <td>Builds the pattern library.</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td>
+              <nobr><code>grunt build</code></nobr>
+            </td>
+          </p>
+          <p>
+            <td>Builds the patterns only.</td>
+            </tr>
+          </p>
+          <p>
+            <tr>
+          </p>
+          <p>
+            <td>
+              <nobr><code>grunt release</code></nobr>
+            </td>
+          </p>
+          <p>
+            <td>Creates a new release of the pattern library and commits and pushes the changes to the origin git repository.</td>
+            </tr>
+            </tbody>
+            </table>
+          </p>
+          <p>
+            <p>To build the pattern library for the first time you must first install the node module dependencies using npm, then run the <code>grunt build</code>.</p>
+          </p>
+          <p><pre><code class="language-bash">npm install
+grunt build</code></pre></p>
+          <p>
+            <h1 id="reviewing-your-work">Reviewing your work</h1>
+          </p>
+          <p>
+            <p>The pattern library is generated as a static website. For convenience a simple node webserver configuration is included, designed to host the library (
+              <a href="http://localhost:8888">
+                <a href="http://localhost:8888">http://localhost:8888</a> 
+              </a> ) during active development. This is also accomplished using
+              <a href="http://gruntjs.com/">Grunt</a> . In fact the default grunt task is designed to support active development of new patterns. The task will not only build the application, but also rebuild it changes are made.</p>
+          </p>
+          <p><pre><code class="language-bash">npm install
+grunt</code></pre></p>
+          <p>
+            <p>The default task is also integrated with
+              <a href="http://livereload.com/">LiveReload</a> . If you use the browser plugin any changes will also be automatically reflected in the browser.</p>
+          </p>
+          <p>
+            <h1 id="using-the-patterns-in-an-application">Using the patterns in an application</h1>
+          </p>
+          <p>
+            <p>As stated earlier, the pattern library is a collection of user interface patterns. These patterns are designed for use in an HTML based website or application. The CSS styles generated from the pattern library are the primary asset used by
+              an application. Simply importing the styles from the pattern library will provide the application the look and feel defined in the pattern library.</p>
+          </p>
+          <p>
+            <p>The pattern library has been designed to be used as a dependency of your application. Using either
+              <a href="http://bower.io">Bower</a>  or
+              <a href="http://www.npmjs.com">npm</a>  you may reference the pattern library you create. this allows the application and pattern library to be related, yet remain loosely coupled to one another.</p>
+          </p>
+          <p>
+            <p>To use the pattern library in your application you need to install the pattern library as a dependency. Then simply reference the CSS file located in <code>bower_components</code> folder.</p>
+          </p>
+          <p><pre><code class="language-bash">bower install example-app-pattern-library --save-dev</code></pre></p>
+          <p><pre><code class="language-html">&lt;style src=&quot;bower_components/example-app-pattern-library/dist/css/example-app-pattern-library.css&quot;</code></pre></p>
+          <p>
+            <p><strong>Public vs private dependencies</strong>  In this example we reference the pattern library by name. This requires that the name be defined in the bower.json in the pattern library but <em>more importantly</em>  that the pattern library
+              be
+              <a href="http://bower.io/docs/creating-packages/">published to the public bower registry</a> .</p>
+          </p>
+          <p>
+            <p>Making your pattern library publicly accessible may not be desirable for some projects. If you wish to work with a pattern library without making the code available to the world, follow the instructions for use as a private dependency.</p>
+          </p>
+          <p>
+            <h2 id="private-dependency-instructions">Private dependency instructions</h2>
+          </p>
+          <p>
+            <p>With a little more work you can realize the benefits of the dependency models promoted by
+              <a href="http://bower.io">Bower</a>  and
+              <a href="http://www.npmjs.com">npm</a>  while keeping your code private. In you application rather than simply referring to the pattern library by name, you will also need to point to the git repository that contains your pattern library. </p>
+          </p>
+          <p>
+            <p>In this example, the application &quot;example-app&quot; defines a the &quot;example-app-pattern-library&quot; as its dependency. The &quot;example-app-pattern-library&quot; exists in a private git repository on bitbucket.org owned by the
+              user &quot;jondoe&quot;.</p>
+          </p>
+          <p>
+            <p><strong>bower.json</strong> </p>
+          </p>
+          <p><pre><code class="language-json">{
+  &quot;<span class="attribute">name</span> &quot;: <span class="value"><span class="string">&quot;example-app&quot;</span> </span>,
+  &quot;<span class="attribute">devDependencies</span> &quot;: <span class="value">{
+    &quot;<span class="attribute">example-app-pattern-library</span> &quot;: <span class="value"><span class="string">&quot;git@bitbucket.org:jondoe/example-app-pattern-library.git&quot;</span> 
+  </span> }
+</span> }</code></pre></p>
+          <p>
+            <p><strong>package.json</strong> </p>
+          </p>
+          <p><pre><code class="language-json">{
+  &quot;<span class="attribute">name</span> &quot;: <span class="value"><span class="string">&quot;example-app&quot;</span> </span>,
+  &quot;<span class="attribute">devDependencies</span> &quot;: <span class="value">{
+    &quot;<span class="attribute">example-app-pattern-library</span> &quot;: <span class="value"><span class="string">&quot;git@bitbucket.org:jondoe/example-app-pattern-library.git&quot;</span> 
+  </span> }
+</span> }</code></pre></p>
+          <p>
+            <p><em>NOTE: you will need to run <code>bower install</code> or <code>npm install</code> to install the pattern library as a dependency to your application.</em> </p>
+          </p>
+          <p>
+            <h1 id="pattern-library-configuration">Pattern library configuration</h1>
+          </p>
+          <p>
+            <p>There are two primary modes that the pattern library is designed to support. By default the pattern library generates all the assets to support both modes of operation. Once you decide upon a desired mode, you may optimize the
+              <a href="http://gruntjs.com/">Grunt</a>  build process to only perform that tasks relevant to your preference.</p>
+          </p>
+          <p>
+            <h3 id="pattern-library-mode">Pattern Library mode</h3>
+          </p>
+          <p>
+            <p>This mode is designed for complete separation of the pattern library and your application. The pattern library is generated as a static website, that you may choose to host and will provide a simple interface for navigating all the patterns
+              in your library.</p>
+          </p>
+          <p>
+            <p><strong>Choose this mode if you need a simple pattern library with the least amount of effort.</strong> </p>
+          </p>
+          <p>
+            <h3 id="patterns-mode">Patterns mode</h3>
+          </p>
+          <p>
+            <p>This mode is designed for tighter integration with your application. The patterns are generated as standalone snippets of HTML, but no website structure is created. This is ideal for more dynamic applications they need to inject information
+              or behavior into the pattern library. </p>
+          </p>
+          <p>
+            <p><strong>Choose this mode if you want the pattern library to demonstrate the <em>behaviors</em>  of your application.</strong> </p>
+          </p>
+          <p>
+            <h1 id="creating-a-pattern-library-release">Creating a pattern library release</h1>
+          </p>
+          <p>
+            <p>Once an application takes a dependency on the pattern library it becomes important manage revisions to the pattern library. This allows the application to be assured that the styles will not change, unintentionally breaking the application
+              design.</p>
+          </p>
+          <p>
+            <p>Following the
+              <a href="http://semver.org/">semantic versioning</a>  principles helps keep this process simple and consistent.</p>
+          </p>
+          <p>
+            <p>
+              <a href="http://gruntjs.com/">Grunt</a>  tasks have been created to simplify this process. In fact it&#39;s as simple as:</p>
+          </p>
+          <p><pre><code class="language-bash">grunt build
+grunt release</code></pre></p>
+          <p>
+            <p>This sequence of commands will:</p>
+          </p>
+          <p>
+            <ol>
+          </p>
+          <p>
+            <li>Build the pattern library</li>
+          </p>
+          <p>
+            <li>Copy the build to the dist folder</li>
+          </p>
+          <p>
+            <li>Increment (patch) the bower.json and package.json version numbers</li>
+          </p>
+          <p>
+            <li>Commit the changes locally</li>
+          </p>
+          <p>
+            <li>Add a tag with the version number</li>
+          </p>
+          <p>
+            <li>Push the changes to the git origin</li>
+            </ol>
+          </p>
+          <p>
+            <p>There are additional
+              <a href="http://gruntjs.com/">Grunt</a>  tasks that follow the
+              <a href="http://semver.org/">SemVer</a>  patterns and allow explicit control of the version increment.</p>
+          </p>
+          <p><pre><code class="language-bash">grunt release-patch
+grunt release-minor
+grunt release-major</code></pre></p>
+          <p>
+            <h2 id="version-usage">Version usage</h2>
+          </p>
+          <p>
+            <p>At some point you will probably wish to limit your application to a specific version of the pattern library. The pattern library follows the standard versioning pattern for both
+              <a href="http://bower.io">Bower</a>  and
+              <a href="http://www.npmjs.com">npm</a> . So simply specifying a version number will work if you have registered the pattern library in a public repository. However if you have chosen to use a private repository you must specify the git
+              <a href="https://www.kernel.org/pub/software/scm/git/docs/#_identifier_terminology">commit-ish</a>  that you are interested in.</p>
+          </p>
+          <p><pre><code>git@bitbucket.org:jondoe/example-app-pattern-library.git#1.0.0</code></pre></p>
+          <p>
+            <p>In this example the commit-ish is the tag of 1.0.0 create when the 1.0.0 release of the pattern library was established.</p>
+          </p>
+          <p>
+            <p>See the
+              <a href="https://docs.npmjs.com/files/package.json#git-urls-as-dependencies">npm documentation on URL dependencies</a>  for more examples of how versions can be referenced.</p>
+          </p>
+          <p>
+            <h1 id="templates-snippets">Templates &amp; Snippets</h1>
+          </p>
+          <p>
+            <p>Tokens described with the <code>{ }</code> should be replaced values relevant to the implementation.</p>
+          </p>
+          <p>
+            <h3 id="pattern-template">Pattern Template</h3>
+          </p>
+          <p><pre><code class="language-md">---
+title: {name}
+---</p>
+<p>## {name}
+{description}</p>
+<p>### Examples
+&lt;div class=&quot;library__example&quot;&gt;
+  {example-markup}
+&lt;/div&gt;</p>
+<p>### Code
+```
+  {code-snippet}
+```</code></pre></p>
+          <p>
+            <h1 id="additional-notes">Additional Notes</h1>
+          </p>
+          <p>
+            <h2 id="weird-quirks">Weird Quirks</h2>
+          </p>
+          <ul>
+            <li>Adding a new scss file in <code>assets/sass</code> requires you to run <code>grunt styles</code> to see the changes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="library__nav">
+      <h2>
+        <a href="
+  
+  
+  
+  
+  
+  
+  
+    atoms/index.html
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ">Atoms</a> 
+      </h2>
+      <ul>
+        <li> <a href="atoms/buttons.html">Buttons</a>  </li>
+        <li> <a href="atoms/colors.html">Colors</a>  </li>
+        <li> <a href="atoms/forms.html">Forms</a>  </li>
+        <li> <a href="atoms/headings.html">Headings</a>  </li>
+        <li> <a href="atoms/typography.html">Typography</a>  </li>
+      </ul>
+      <h2>
+        <a href="
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    molecules/index.html
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ">Molecules</a> 
+      </h2>
+      <ul>
+        <li> <a href="molecules/nav.html">Navigation</a>  </li>
+      </ul>
+      <h2>
+        <a href="
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    pages/index.html
+  
+  
+  
+  
+  
+  
+  
+  ">Pages</a> 
+      </h2>
+      <ul>
+        <li> <a href="pages/article-template.html">Article Template</a>  </li>
+        <li> <a href="pages/home-page.html">Home Page</a>  </li>
+      </ul>
+    </nav>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="assets/../theme-assets/js/PatternPack.Global.Navigation.js"></script>
+  </body>
+</html>

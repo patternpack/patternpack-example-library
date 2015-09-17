@@ -1,0 +1,32 @@
+{
+	"version": 3,
+	"file": "patterns.css",
+	"sources": [
+		"../sass/patterns.scss",
+		"../sass/libraries/_reset.scss",
+		"../sass/config/variables/_colors.scss",
+		"../sass/config/variables/_typography.scss",
+		"../sass/config/mixins/_legacy-browsers.scss",
+		"../sass/_globals.scss",
+		"../sass/patternpack-patterns.scss",
+		"../../atoms/buttons.scss",
+		"../../atoms/forms.scss",
+		"../../atoms/headings.scss",
+		"../../atoms/typography.scss"
+	],
+	"sourcesContent": [
+		"// Libraries\n@import \"libraries/reset\";\n\n// Config\n@import \"config/variables/colors\";\n@import \"config/variables/typography\";\n\n// Mixins\n@import \"config/mixins/legacy-browsers\";\n\n// Patterns\n@import \"globals\";\n@import \"patternpack-patterns\"; // Built by sass-globbing\n",
+		"/* Reset CSS\n  QUESTION: where should this live given the new folder structure?\n*/\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}",
+		"$color-red:       #AC0023;\n$color-green:     #1E8339;\n$color-yellow:    #F5E93D;",
+		"",
+		"",
+		"",
+		"/* generated with grunt-sass-globbing */\n\n@import \"../../atoms/buttons\";\n@import \"../../atoms/forms\";\n@import \"../../atoms/headings\";\n@import \"../../atoms/typography\";\n",
+		"button {\n  padding: 5px 20px;\n  border: 0;\n  border-radius: 5px;\n  color: white;\n}\n\n.button--primary {\n  background-color: #000;\n}\n\n.button--secondary {\n  background-color: #CCC;\n}\n\n.button--small {\n  padding: 2px 20px;\n  height: 30px;\n}\n\n.button--large {\n  height: 40px;\n}\n",
+		"",
+		"",
+		"strong {\n  font-weight: bold;\n}"
+	],
+	"mappings": "ACgBmB,IAAI,CAAC,IAAI,CAAC,GAAG,CAAC,IAAI,CAAC,MAAM,CAAC,MAAM,CAAC,MAAM,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,UAAU,CAAC,GAAG,CAAC,CAAC,CAAC,IAAI,CAAC,OAAO,CAAC,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,KAAK,CAAC,MAAM,CAAC,MAAM,CAAC,GAAG,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,MAAM,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,QAAQ,CAAC,IAAI,CAAC,KAAK,CAAC,MAAM,CAAC,KAAK,CAAC,OAAO,CAAC,KAAK,CAAC,KAAK,CAAC,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,OAAO,CAAC,KAAK,CAAC,MAAM,CAAC,OAAO,CAAC,KAAK,CAAC,MAAM,CAAC,UAAU,CAAC,MAAM,CAAC,MAAM,CAAC,MAAM,CAAC,IAAI,CAAC,GAAG,CAAC,MAAM,CAAC,IAAI,CAAC,OAAO,CAAC,OAAO,CAAC,IAAI,CAAC,IAAI,CAAC,KAAK,CAAC,KAAK,AAApZ,CACvB,MAAM,CAAE,CAAE,CACV,OAAO,CAAE,CAAE,CACX,MAAM,CAAE,CAAE,CACV,SAAS,CAAE,IAAK,CAChB,IAAI,CAAE,OAAQ,CACd,cAAc,CAAE,QAAS,CAND,AAUS,OAAO,CAAC,KAAK,CAAC,OAAO,CAAC,UAAU,CAAC,MAAM,CAAC,MAAM,CAAC,MAAM,CAAC,MAAM,CAAC,IAAI,CAAC,GAAG,CAAC,OAAO,AAArE,CACzC,OAAO,CAAE,KAAM,CAD2B,AAG5C,IAAI,AAAC,CACH,WAAW,CAAE,CAAE,CADX,AAGF,EAAE,CAAC,EAAE,AAAF,CACL,UAAU,CAAE,IAAK,CADX,AAGI,UAAU,CAAC,CAAC,AAAV,CACZ,MAAM,CAAE,IAAK,CADA,AAIJ,UAAU,AAAA,OAAO,CAAC,UAAU,AAAA,MAAM,CAAC,CAAC,AAAA,OAAO,CAAC,CAAC,AAAA,MAAM,AAA5C,CAChB,OAAO,CAAE,EAAG,CACZ,OAAO,CAAE,IAAK,CAFG,AAInB,KAAK,AAAC,CACJ,eAAe,CAAE,QAAS,CAC1B,cAAc,CAAE,CAAE,CAFb,AM3CP,MAAM,AAAC,CACL,OAAO,CAAE,GAAG,CAAC,IAAI,CACjB,MAAM,CAAE,CAAE,CACV,aAAa,CAAE,GAAI,CACnB,KAAK,CAAE,KAAM,CAJP,AAOR,gBAAgB,AAAC,CACf,gBAAgB,CAAE,IAAK,CADP,AAIlB,kBAAkB,AAAC,CACjB,gBAAgB,CAAE,IAAK,CADL,AAIpB,cAAc,AAAC,CACb,OAAO,CAAE,GAAG,CAAC,IAAI,CACjB,MAAM,CAAE,IAAK,CAFC,AAKhB,cAAc,AAAC,CACb,MAAM,CAAE,IAAK,CADC,AGpBhB,MAAM,AAAC,CACL,WAAW,CAAE,IAAK,CADZ",
+	"names": []
+}
