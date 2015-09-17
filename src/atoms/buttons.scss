@@ -1,0 +1,23 @@
+button {
+  padding: 5px 20px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.button--primary {
+  background-color: #000;
+}
+
+.button--secondary {
+  background-color: #CCC;
+}
+
+.button--small {
+  padding: 2px 20px;
+  height: 30px;
+}
+
+.button--large {
+  height: 40px;
+}
