@@ -1,7 +1,7 @@
 {
   "name": "patternpack-example-library",
   "description": "The example pattern library created from pattern pack",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "devDependencies": {
     "grunt": "latest",
