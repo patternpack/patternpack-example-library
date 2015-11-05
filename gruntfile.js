@@ -3,11 +3,12 @@ module.exports = function (grunt) {
     patternpack: {
       options: {
         assets: "./src/assets"
-
-        // Add a custom theme by pointing to the location of the theme files
-        // This can be added to your pattern library or in an external repository
-        // like the patternpack-example-theme.
-        // pattern: "./node_modules/patternpack-example-theme"
+        // Add a custom theme by specifying a theme package.
+        // theme: "patternpack-example-theme"
+        //
+        // You may also point directly to a theme by path if you wish to make
+        // the theme part of your pattern library itself.
+        // theme: "./theme/"
       },
       run: {},
       build: {},

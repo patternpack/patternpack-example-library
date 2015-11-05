@@ -1,6 +1,4 @@
-/* generated with grunt-sass-globbing */
+// Include custom styles here
+@import "_globals";
 
-@import "../../atoms/buttons";
-@import "../../atoms/forms";
-@import "../../atoms/headings";
-@import "../../atoms/typography";
+@import "_patternpack-patterns"; // Built by sass-globbing
