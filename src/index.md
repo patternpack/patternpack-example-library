@@ -22,9 +22,6 @@ The [atomic design] principles outlined by [Brad Frost] have served as a signifi
  **Page**     | A single implementation for a specific use case that requires styles that intentionally deviate from the patterns defined in the library. (home page, any custom page)
 
 
-In addition to the concepts of [atomic design] the pattern library follows some general principles for [CSS style guidance].
-
-
 # What is a pattern?
 A pattern consists of three basic elements (name & description, visual example, code example) that should fully describe the element.  Each pattern in the pattern library is defined individually and organized by it atomic design hierarchy.
 
@@ -263,7 +260,6 @@ title: {name}
 [user interface design patterns]: http://ui-patterns.com/
 [atomic design]: http://bradfrost.com/blog/post/atomic-web-design
 [Brad Frost]: http://bradfrost.com
-[CSS style guidance]: https://bitbucket.org/slalom-consulting/dallas-css-standards
 [Grunt]: http://gruntjs.com/
 
 [LiveReload]: http://livereload.com/
